@@ -5,14 +5,24 @@
         "type": "git",
         "url": "git@github.com:magicismight/StaticContainer.git"
     },
+    "scripts": {
+        "build": "babel src --out-dir lib"
+    },
     "license": "MIT",
-    "main": "./StaticContainer",
+    "main": "./lib/StaticContainer",
     "description": "react StaticContainer",
     "keywords": [
         "react-component",
         "ios",
         "android"
     ],
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1"
+    },
     "peerDependencies": {
         "prop-types": "^15.5.10"
     }
